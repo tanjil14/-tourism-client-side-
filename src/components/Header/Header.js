@@ -8,7 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 
 
 const Header = () => {
-    const {contexts,selectedBooking} = useAuth();
+    const {contexts} = useAuth();
     return (
         <>
             <Navbar className='header' variant="dark" sticky='top' collapseOnSelect expand="lg">
