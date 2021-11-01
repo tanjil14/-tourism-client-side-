@@ -14,19 +14,19 @@ const Form = () => {
             <h1 style={{textAlign:'center'}}>Fill up the form</h1>
   <form className='opinion' action="action_page.php">
 
-    <label for="fname">First Name</label>
+    <label htmlFor="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your first name"/>
 
-    <label for="lname">Last Name</label>
+    <label htmlFor="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name"/>
 
-    <label for="email">Email</label>
+    <label htmlFor="email">Email</label>
     <input type="text" id="lname" name="email" placeholder="...@gmail.com"/>
 
-    <label for="address">Address</label>
+    <label htmlFor="address">Address</label>
     <input type="text" id="lname" name="address" placeholder="address"/>
 
-    <label for="phone-number">Phone Number</label>
+    <label htmlFor="phone-number">Phone Number</label>
     <input type="text" id="lname" name="phone" placeholder=""/>
 
     <Link to='/thanks'><input type="submit"  value="Submit"/></Link>

@@ -12,13 +12,13 @@ const Opinion = () => {
             <h1 style={{textAlign:'center'}}>Write your opinion</h1>
   <form className='opinion' action="action_page.php">
 
-    <label for="fname">First Name</label>
+    <label htmlFor="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your first name"/>
 
-    <label for="lname">Last Name</label>
+    <label htmlFor="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name"/>
 
-    <label for="country">Country</label>
+    <label htmlFor="country">Country</label>
     <select id="country" name="country">
       <option value="australia"> Bangladesh</option>
       <option value="canada">Canada</option>
@@ -28,7 +28,7 @@ const Opinion = () => {
       <option value="usa">China</option>
     </select>
 
-    <label for="subject">Opinion</label>
+    <label htmlFor="subject">Opinion</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
     <Link to='/thanks'><input type="submit"  value="Submit"/></Link>

@@ -6,7 +6,7 @@ const UseCart = () => {
     const {uid} = user;
     const [selectedBooking, setSelectedBooking] = useState([]);
     useEffect(()=>{
-        fetch(`https://fast-headland-27081.herokuapp.com/cart/${uid}`)
+        fetch(`https://vast-fjord-05847.herokuapp.com/cart/${uid}`)
         .then(res=>res.json())
         .then(data=>{
             if(data.length){
@@ -23,7 +23,7 @@ const UseCart = () => {
         if (isHave) { 
             alert("Already Booked!! Thanks For Booking......")
         } else {
-            fetch('https://fast-headland-27081.herokuapp.com/booking/add', {
+            fetch('https://vast-fjord-05847.herokuapp.com/booking/add', {
                 method: "POST",
                 headers: {"content-type": "application/json"},
                 body: JSON.stringify(dt)
@@ -39,7 +39,7 @@ const UseCart = () => {
     }
     function remove (id){
         // const selectAfterRemove = selectedBooking.filter((select)=> !(select._id === id));
-        const url = `https://fast-headland-27081.herokuapp.com/booking/add/${id}`;
+        const url = `https://vast-fjord-05847.herokuapp.com/booking/add/${id}`;
         fetch(url,{
             method: 'DELETE'
         })

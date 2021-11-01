@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Header.css';
-import headerLogo from '../../images/logo/header-logo.png';
+import headerLogo from '../../images/logo/departure.png';
 import { HashLink } from 'react-router-hash-link';
 
 
@@ -13,7 +13,7 @@ const Header = () => {
         <>
             <Navbar className='header' variant="dark" sticky='top' collapseOnSelect expand="lg">
             <Container>
-                <Navbar.Brand href="#home"><img style={{color:'white'}} className=' logo' src={headerLogo} alt="" /></Navbar.Brand>
+                <Navbar.Brand to="/"><img style={{color:'white',width:"10%"}} className=' logo' src={headerLogo} alt="" /></Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse  className='justify-text-end fw-normal'>
                 <Nav className="ms-auto ">

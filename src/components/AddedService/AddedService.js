@@ -10,7 +10,7 @@ const AddedService = () => {
     
     const onSubmit = data =>{
          console.log(data);
-         axios.post('https://fast-headland-27081.herokuapp.com/services', data)
+         axios.post('https://vast-fjord-05847.herokuapp.com/services', data)
         .then(res =>{
             if(res.data.insertedId){
                 alert('Added successfully');
